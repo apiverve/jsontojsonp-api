@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/jsontojsonp",
+  "version": "1.1.12",
+  "description": "JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/jsontojsonp-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "json to jsonp", "json to jsonp api", "json to jsonp tool", "json to jsonp software", "json to jsonp service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/jsontojsonp-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/jsontojsonp?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
