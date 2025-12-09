@@ -1,0 +1,83 @@
+openapi: 3.0.4
+info:
+  title: JSON to JSONP
+  description: JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/jsontojsonp:
+    post:
+      summary: Convert JSON Data into JSONP Format
+      description: JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
+      operationId: jsontojsonp
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  callback: callbackFunction
+                  jsonp: callbackFunction({"menu":{"id":"file","value":"File","popup":false}});
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                json:
+                  type: string
+                  description: The JSON data you want converted into JSONP format
+                  example:
+                    menu:
+                      id: file
+                      value: File
+                      popup: false
+              required:
+              - json
+              example:
+                callback: callbackFunction
+                json:
+                  menu:
+                    id: file
+                    value: File
+                    popup: false
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
