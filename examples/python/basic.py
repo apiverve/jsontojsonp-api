@@ -14,27 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/jsontojsonp'
 
 def call_jsontojsonp_api():
     """
-    Make a POST request to the JSON to JSONP API
+    Make a GET request to the JSON to JSONP API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;callback&#x27;: &#x27;callbackFunction&#x27;,
-    &#x27;json&#x27;: {
-        &#x27;menu&#x27;: {
-            &#x27;id&#x27;: &#x27;file&#x27;,
-            &#x27;value&#x27;: &#x27;File&#x27;,
-            &#x27;popup&#x27;: false
-        }
-    }
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
