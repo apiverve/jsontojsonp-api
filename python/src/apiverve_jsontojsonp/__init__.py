@@ -1,1 +1,3 @@
-from .apiClient import JsontojsonpAPIClient
+from .apiClient import JsontojsonpAPIClient, JsontojsonpAPIClientError
+
+__all__ = ['JsontojsonpAPIClient', 'JsontojsonpAPIClientError']
