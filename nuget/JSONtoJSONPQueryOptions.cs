@@ -12,9 +12,14 @@ namespace APIVerve.API.JSONtoJSONP
     {
         /// <summary>
         /// The JSON data you want converted into JSONP format
-        /// Example: {"name":"John Doe","age":30,"city":"New York"}
         /// </summary>
         [JsonProperty("json")]
         public string Json { get; set; }
+
+        /// <summary>
+        /// The callback function name to wrap the JSON data
+        /// </summary>
+        [JsonProperty("callback")]
+        public string Callback { get; set; }
     }
 }
