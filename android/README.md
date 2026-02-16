@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:jsontojsonp-api:1.1.13'
+    implementation 'com.github.apiverve:jsontojsonp-api:1.1.14'
 }
 ```
 
@@ -47,8 +47,8 @@ JSONtoJSONPAPIClient client = new JSONtoJSONPAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("json", "{\"name\":\"John Doe\",\"age\":30,\"city\":\"New York\"}");
-    parameters.put("callback", "callback");
+    parameters.put("json", "[object Object]");
+    parameters.put("callback", "callbackFunction");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
