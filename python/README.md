@@ -44,7 +44,10 @@ from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient
 # Initialize the client with your APIVerve API key
 api = JsontojsonpAPIClient("[YOUR_API_KEY]")
 
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 ```
 
 ###### Simple Request
@@ -121,7 +127,10 @@ from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient, JsontojsonpAPIC
 
 api = JsontojsonpAPIClient("[YOUR_API_KEY]")
 
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 
 try:
     result = api.execute(query)
@@ -142,7 +151,10 @@ from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient, JsontojsonpAPIC
 
 api = JsontojsonpAPIClient("[YOUR_API_KEY]")
 
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 
 try:
     result = api.execute(query)
@@ -176,7 +188,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient, JsontojsonpAPIClientError
 
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 
 # Using context manager ensures proper cleanup
 with JsontojsonpAPIClient("[YOUR_API_KEY]") as api:
@@ -202,7 +217,10 @@ from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient
 # Enable debug mode
 api = JsontojsonpAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -217,8 +235,12 @@ from apiverve_jsontojsonp.apiClient import JsontojsonpAPIClient
 
 api = JsontojsonpAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "callback": "callbackFunction",
+    "json": {"menu":{"id":"file","value":"File","popup":false}}
+}
+
 try:
-    query = { "callback": "callbackFunction", "json": { "menu": { "id": "file", "value": "File", "popup": false } } }
     result = api.execute(query)
     print(result)
 finally:
