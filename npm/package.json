@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/jsontojsonp",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.",
   "main": "index.js",
   "types": "index.d.ts",
