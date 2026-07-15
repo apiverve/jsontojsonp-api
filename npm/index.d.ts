@@ -4,17 +4,29 @@ declare module '@apiverve/jsontojsonp' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface jsontojsonpResponse {
     status: string;
     error: string | null;
     data: JSONtoJSONPData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface JSONtoJSONPData {
-      callback: string;
-      jsonp:    string;
+      callback: null | string;
+      jsonp:    null | string;
   }
 
   export default class jsontojsonpWrapper {
