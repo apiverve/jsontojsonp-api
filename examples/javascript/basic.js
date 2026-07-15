@@ -9,15 +9,29 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/jsontojsonp';
 
 /**
- * Make a GET request to the JSON to JSONP API
+ * Make a POST request to the JSON to JSONP API
  */
 async function callJSONtoJSONPAPI() {
   try {
+    // Request body
+    const requestBody &#x3D; {
+    &quot;callback&quot;: &quot;callbackFunction&quot;,
+    &quot;json&quot;: {
+        &quot;menu&quot;: {
+            &quot;id&quot;: &quot;file&quot;,
+            &quot;value&quot;: &quot;File&quot;,
+            &quot;popup&quot;: false
+        }
+    }
+};
+
     const response = await fetch(API_URL, {
-      method: 'GET',
+      method: 'POST',
       headers: {
-        'x-api-key': API_KEY
-      }
+        'x-api-key': API_KEY,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(requestBody)
     });
 
     // Check if response is successful
