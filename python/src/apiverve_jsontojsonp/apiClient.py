@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,7 @@ class ValidationError(JsontojsonpAPIClientError):
 class JsontojsonpAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "json": {"type": "string", "required": True},
+        "json": {"type": "object", "required": True},
         "callback": {"type": "string", "required": False, "default": "callback"}
     }
 
