@@ -11,13 +11,13 @@ namespace APIVerve.API.JSONtoJSONP
     public class JSONtoJSONPQueryOptions
     {
         /// <summary>
-        /// The JSON data you want converted into JSONP format
+        /// The JSON data you want converted into JSONP format. Send it as an object or as a JSON-encoded string.
         /// </summary>
         [JsonProperty("json")]
-        public string Json { get; set; }
+        public object Json { get; set; }
 
         /// <summary>
-        /// The callback function name to wrap the JSON data
+        /// The callback function name to wrap the JSON data. Must be a JavaScript identifier, optionally dotted (e.g. myCallback or window.myCallback).
         /// </summary>
         [JsonProperty("callback")]
         public string Callback { get; set; }

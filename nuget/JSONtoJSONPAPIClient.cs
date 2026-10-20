@@ -67,7 +67,7 @@ namespace APIVerve.API.JSONtoJSONP
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "json", new ValidationRule { Type = "string", Required = true } },
+            { "json", new ValidationRule { Type = "object", Required = true } },
             { "callback", new ValidationRule { Type = "string", Required = false } }
         };
 
