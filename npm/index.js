@@ -30,7 +30,7 @@ class jsontojsonpWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/jsontojsonp';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"json":{"type":"string","required":true},"callback":{"type":"string","required":false,"default":"callback"}};
+        this.validationRules = {"json":{"type":"object","required":true},"callback":{"type":"string","required":false,"default":"callback"}};
     }
 
     /**

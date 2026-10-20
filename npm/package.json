@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/jsontojsonp",
-  "version": "1.2.0",
-  "description": "JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.",
+  "version": "1.2.2",
+  "description": "JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "json to jsonp", "json to jsonp api", "json to jsonp tool", "json to jsonp software", "json to jsonp service"
+    "json to jsonp api", "convert json to jsonp", "wrap json in callback", "jsonp converter", "json to jsonp conversion"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/jsontojsonp-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/jsontojsonp?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/jsontojsonp?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
