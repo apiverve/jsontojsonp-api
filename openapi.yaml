@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: JSON to JSONP
   description: >-
-    JSON to JSONP is a simple tool for converting JSON data into JSONP format.
-    It returns the converted JSONP data.
+    JSON to JSONP wraps JSON data in a JavaScript callback function to produce
+    valid JSONP output. Pass an object or JSON string with an optional callback
+    identifier to receive the formatted script string.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/jsontojsonp:
     post:
-      summary: Convert JSON Data into JSONP Format
+      summary: JSON to JSONP
       description: >-
         JSON to JSONP is a simple tool for converting JSON data into JSONP
         format. It returns the converted JSONP data.
@@ -46,8 +47,7 @@ paths:
                 error: null
                 data:
                   callback: callbackFunction
-                  jsonp: >-
-                    callbackFunction({"menu":{"id":"file","value":"File","popup":false}});
+                  jsonp: callbackFunction({"menu":{"id":"file","value":"File","popup":false}});
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
@@ -63,10 +63,15 @@ paths:
               properties:
                 json:
                   type: string
-                  description: The JSON data you want converted into JSONP format
+                  description: >-
+                    The JSON data you want converted into JSONP format. Send it
+                    as an object or as a JSON-encoded string.
                 callback:
                   type: string
-                  description: The callback function name to wrap the JSON data
+                  description: >-
+                    The callback function name to wrap the JSON data. Must be a
+                    JavaScript identifier, optionally dotted (e.g. myCallback or
+                    window.myCallback).
               required:
                 - json
 components:

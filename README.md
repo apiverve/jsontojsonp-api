@@ -1,13 +1,13 @@
-# [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
+JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string.
 
 The JSON to JSONP API provides a simple, reliable way to integrate json to jsonp functionality into your applications. Built for developers who need production-ready json to jsonp capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -181,7 +181,7 @@ go get github.com/apiverve/jsontojsonp-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/jsontojsonp](https://docs.apiverve.com/ref/jsontojsonp)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -241,7 +241,7 @@ A real response from the JSON to JSONP API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
