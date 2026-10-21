@@ -1,6 +1,6 @@
 # JSON to JSONP API - PHP Package
 
-JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
+JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string.
 
 ## Installation
 
@@ -85,11 +85,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/jsontojsonp?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/jsontojsonp?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/jsontojsonp?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/jsontojsonp?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/jsontojsonp?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/jsontojsonp?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
