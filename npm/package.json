@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/jsontojsonp",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string.",
   "main": "index.js",
   "types": "index.d.ts",
