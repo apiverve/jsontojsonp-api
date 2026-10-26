@@ -4,6 +4,6 @@ require_relative "apiverve_jsontojsonp/client"
 
 module APIVerve
   module Jsontojsonp
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
