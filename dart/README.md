@@ -1,11 +1,11 @@
 # JSON to JSONP API - Dart/Flutter Client
 
-JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
+JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_jsontojsonp.svg)](https://pub.dev/packages/apiverve_jsontojsonp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_jsontojsonp: ^1.1.14
+  apiverve_jsontojsonp: ^1.2.5
 ```
 
 Then run:
@@ -61,12 +61,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/jsontojsonp](https://docs.apiverve.com/ref/jsontojsonp?utm_source=dart&utm_medium=readme)
+- **API Home:** [JSON to JSONP API](https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/jsontojsonp](https://docs.apiverve.com/ref/jsontojsonp?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -74,4 +74,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

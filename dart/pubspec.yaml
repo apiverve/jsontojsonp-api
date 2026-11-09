@@ -1,7 +1,7 @@
 name: apiverve_jsontojsonp
-description: JSON to JSONP is a simple tool for converting JSON data into JSONP format. It returns the converted JSONP data.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=homepage
+description: "JSON to JSONP wraps JSON data in a JavaScript callback function to produce valid JSONP output. Pass an object or JSON string with an optional callback identifier to receive the formatted script string."
+version: 1.2.5
+homepage: https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/jsontojsonp-api/tree/main/dart
 
 environment:

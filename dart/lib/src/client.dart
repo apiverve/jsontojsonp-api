@@ -46,11 +46,11 @@ final _formatPatterns = {
 
 /// JSON to JSONP API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/jsontojsonp?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [json] (required) - The JSON data you want converted into JSONP format
-/// * [callback] - The callback function name to wrap the JSON data
+/// * [json] (required) - The JSON data you want converted into JSONP format. Send it as an object or as a JSON-encoded string.
+/// * [callback] - The callback function name to wrap the JSON data. Must be a JavaScript identifier, optionally dotted (e.g. myCallback or window.myCallback).
 class JsontojsonpClient {
   final String apiKey;
   final String baseUrl;
@@ -58,7 +58,7 @@ class JsontojsonpClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'json': ValidationRule(type: 'string', required: true),
+    'json': ValidationRule(type: 'object', required: true),
     'callback': ValidationRule(type: 'string', required: false),
   };
 
